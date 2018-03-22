@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leikarar</title>
+	<link rel="stylesheet" type="text/css" href="JS/semantic.min.css">
+	<meta charset="utf-8">
+	<script src="JS/jquery-3.3.1.min.js"></script>
+	<script src="JS/semantic.min.js"></script>
+</head>
+<body>
+	<h1>Leikarar</h1>
+	
+
+<div class="ui five column centered grid">
+  <div class="column">
+  	<div class="ui medium image">
+  	<img class="mark" src="mark.jpg">
+  	</div>
+  	<h1>Mark Hamill</h1>
+  </div>
+  
+  <div class="column">
+  	<div class="ui medium image">
+  	<img class="harrison" src="harrison.jpg">
+  	</div>
+  	<h1>Harrison Ford</h1>
+  </div>
+ 
+  <div class="column">
+  	<div class="ui medium image">
+  	<img class="carrie" src="carrie.jpg">
+  	</div>
+  	<h1>Carrie Fisher</h1>
+  </div>
+
+<div class="column">
+  	<div class="ui medium image">
+  	<img class="alec" src="alec.jpg">
+  	</div>
+  	<h1>Alec Guinness</h1>
+  </div>
+</div>
+
+<div class="ui modal mark">
+  <div class="header">Mark Hamill</div>
+  <div class="image content">
+  	<div class ="ui medium image">
+    <img class="image" src="mark.jpg">
+    </div>
+    <div class="description">
+      <p></p>
+    </div>
+  </div>
+</div>
+
+<div class="ui modal harrison">
+  <div class="header">Harrison Ford</div>
+  <div class="image content">
+  	<div class ="ui medium image">
+    <img class="image" src="harrison.jpg">
+    </div>
+    <div class="description">
+      <p></p>
+    </div>
+  </div>
+</div>
+
+<div class="ui modal carrie">
+  <div class="header">Carrie Fisher</div>
+  <div class="image content">
+  	<div class ="ui medium image">
+    <img class="image" src="carrie.jpg">
+    </div>
+    <div class="description">
+      <p></p>
+    </div>
+  </div>
+</div>
+
+<div class="ui modal alec">
+  <div class="header">Alec Guinness</div>
+  <div class="image content">
+  	<div class ="ui medium image">
+    <img class="image" src="alec.jpg">
+    </div>
+    <div class="description">
+      <p></p>
+    </div>
+  </div>
+</div>
+<br>
+	<h1>Síður</h1>
+  	<h2>
+    <a href="index.html">Forsíða</a><br>
+    <br>
+    <a href="">Hafa Samband</a>
+
+<script type="text/javascript">
+	$('body').on('click','img.mark',function(){
+		 $('.ui.modal.mark').modal('show');
+	})
+</script>
+
+<script type="text/javascript">
+	$('body').on('click','img.harrison',function(){
+		 $('.ui.modal.harrison').modal('show');
+	})
+</script>
+
+<script type="text/javascript">
+	$('body').on('click','img.carrie',function(){
+		 $('.ui.modal.carrie').modal('show');
+	})
+</script>
+
+<script type="text/javascript">
+	$('body').on('click','img.alec',function(){
+		 $('.ui.modal.alec').modal('show');
+	})
+</script>
+</body>
+</html>
